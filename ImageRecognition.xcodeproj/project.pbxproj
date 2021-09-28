@@ -10,9 +10,10 @@
 		0F60AF3526E1158A006F702F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F60AF3426E1158A006F702F /* AppDelegate.swift */; };
 		0F60AF3726E1158A006F702F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F60AF3626E1158A006F702F /* SceneDelegate.swift */; };
 		0F60AF3926E1158A006F702F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F60AF3826E1158A006F702F /* ViewController.swift */; };
-		0F60AF3C26E1158B006F702F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F60AF3A26E1158B006F702F /* Main.storyboard */; };
 		0F60AF3E26E1158E006F702F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F60AF3D26E1158E006F702F /* Assets.xcassets */; };
 		0F60AF4126E1158E006F702F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F60AF3F26E1158E006F702F /* LaunchScreen.storyboard */; };
+		0F60AF4C26E11AAB006F702F /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0F60AF4B26E11AAB006F702F /* Resnet50.mlmodel */; };
+		0F73BA3327029617005C57A6 /* RecyclableDetector1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0F73BA3227029617005C57A6 /* RecyclableDetector1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		0F60AF3426E1158A006F702F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F60AF3626E1158A006F702F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0F60AF3826E1158A006F702F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F60AF3B26E1158B006F702F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F60AF3D26E1158E006F702F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F60AF4026E1158E006F702F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F60AF4226E1158E006F702F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F60AF4B26E11AAB006F702F /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		0F73BA3227029617005C57A6 /* RecyclableDetector1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecyclableDetector1.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				0F60AF3426E1158A006F702F /* AppDelegate.swift */,
 				0F60AF3626E1158A006F702F /* SceneDelegate.swift */,
 				0F60AF3826E1158A006F702F /* ViewController.swift */,
-				0F60AF3A26E1158B006F702F /* Main.storyboard */,
 				0F60AF3D26E1158E006F702F /* Assets.xcassets */,
 				0F60AF3F26E1158E006F702F /* LaunchScreen.storyboard */,
 				0F60AF4226E1158E006F702F /* Info.plist */,
+				0F60AF4B26E11AAB006F702F /* Resnet50.mlmodel */,
+				0F73BA3227029617005C57A6 /* RecyclableDetector1.mlmodel */,
 			);
 			path = ImageRecognition;
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 			files = (
 				0F60AF4126E1158E006F702F /* LaunchScreen.storyboard in Resources */,
 				0F60AF3E26E1158E006F702F /* Assets.xcassets in Resources */,
-				0F60AF3C26E1158B006F702F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F60AF3926E1158A006F702F /* ViewController.swift in Sources */,
+				0F73BA3327029617005C57A6 /* RecyclableDetector1.mlmodel in Sources */,
 				0F60AF3526E1158A006F702F /* AppDelegate.swift in Sources */,
+				0F60AF4C26E11AAB006F702F /* Resnet50.mlmodel in Sources */,
 				0F60AF3726E1158A006F702F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F60AF3A26E1158B006F702F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F60AF3B26E1158B006F702F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F60AF3F26E1158E006F702F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.travisbrigman.ImageRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.travisbrigman.ImageRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
